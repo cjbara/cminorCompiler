@@ -10,7 +10,7 @@
 DIGIT	[0-9]
 LETTER	[a-zA-Z]
 WS	[\t\n ]
-ID	[a-zA-Z][a-zA-Z0-9]{0,256}
+ID	[a-zA-Z_][a-zA-Z0-9_]{0,256}
   
 %% 
 
@@ -33,7 +33,7 @@ void 		{ return TOKEN_VOID; }
 while		{ return TOKEN_WHILE; }
 
 \"(\\.|[^\"\n])*\" {return TOKEN_STRING_LITERAL; }
-\'(.|\\.)\'	{ return TOKEN_CHAR_LITERAL; }
+\'([^\\]|\\.)\'	{ return TOKEN_CHAR_LITERAL; }
 {DIGIT}+	{ return TOKEN_INTEGER_LITERAL; }
 
 ;		{ return TOKEN_SEMICOLON; }
