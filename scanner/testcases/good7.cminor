@@ -1,14 +1,9 @@
-x: integer = 65;
-y: char = 'A';
-if(x>y) // error: x and y are of different types!
+// strings
+str:string = "";
 
-f: integer = 0;
-if(f)  "the quick\n fox"    // error: f is not a boolean!
+str:string = "hello this is a string!";
+str:string = "hello this is \1 a string!";
 
-writechar: function void ( char c );
-a: integer = 65;
-writechar(a);  // error: a is not a char!
+str:string = "11234567891123456789112345678911234567891123456789112345678911234567891123456789112345678911234567891123456789112345678911234567891123456789112345678911234567"// less then 160 characters 
 
-b: array [2] boolean = {true,false};
-x: integer = 0;
-x = b[0];      // error: x is not a boolean!
+

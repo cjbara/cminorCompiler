@@ -1,10 +1,54 @@
-//This comment should be ignored 45 string
- 	
-
-			47983201
-		thequcikfox
-/* Also ig/*nored */
-
-cool
-
-'c'
+// just runs all basic tokens
+//
+/* comment */
+array 
+boolean 
+char 
+else 
+false 
+for 
+function 
+if 
+integer 
+print 
+return 
+string 
+true
+void
+while
+:
+;
+,
+[
+]
+{
+}
+(
+)
+=
+^
++
+-
+++
+--
+*
+/
+%
+==
+>=
+<=
+<
+>
+!=
+a
+ab
+ab3
+ab3a
+12314
+1
+12
+123
+'A'
+""
+"a"
+"aa"

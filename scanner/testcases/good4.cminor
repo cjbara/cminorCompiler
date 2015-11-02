@@ -1,4 +1,10 @@
-	i: integer;
-	for( i=0;i<size;i++) {
-		print a[i], "\n";
-	}
+// basic data types
+
+
+character:	 	char = 'c';
+character: char = '\n';
+character:	char = '\0';
+character = '\6';
+character = '\c'
+character = '\t'
+

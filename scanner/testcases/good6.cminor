@@ -1,6 +1,10 @@
-printarray: function void ( a: array [] integer, size: integer ) = {
-	i: integer;
-	for( i=0;i<size;i++) {
-		print a[i], "\n";
-	}
-}
+// strings
+str:string = "";
+
+str:string = "we can write an escaped backslash \\";
+" \"this is a unique test case \" ";
+" \n \t \0"
+"\e \r \y"
+str:string = "single qoute ' or \' ";
+str:string = " double qoute \" ";
+

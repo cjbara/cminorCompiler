@@ -1,6 +1,9 @@
-5hello
+// unmatched comment throws error 
+/* This is a comment.
 
-"notre "
-dame"
-"notr"
-'5'
+
+
+
+
+
+
