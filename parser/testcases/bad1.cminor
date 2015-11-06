@@ -1,0 +1,6 @@
+main: function integer () = {
+
+for(i=0;j<10;i++) 
+//no for body
+
+}

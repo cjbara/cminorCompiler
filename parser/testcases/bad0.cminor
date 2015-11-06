@@ -1,0 +1,4 @@
+/*bad declaration */
+int main () {
+	x: integer;
+}

@@ -1,0 +1,10 @@
+/* tests open ifs and for loops */
+
+main: function integer () = {
+
+if(true) x++; if(false) y++;else x--;
+
+for 				 (;;) x--;
+for (i = 0; i<t; i++) print;
+
+}

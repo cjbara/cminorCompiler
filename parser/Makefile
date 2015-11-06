@@ -1,22 +1,16 @@
 all: cminor
 
-cminor: token.o lex.yy.o cminor.o error.o
-	gcc lex.yy.o token.o cminor.o error.o -o cminor
+cminor: token.o lex.yy.o cminor.o error.o parser.tab.o expr.o type.o decl.o param_list.o stmt.o
+	gcc lex.yy.o token.o cminor.o error.o parser.tab.o expr.o type.o decl.o param_list.o stmt.o -o cminor
 
-cminor.o: cminor.c
-	gcc -c cminor.c
+%.o: %.c 
+	gcc -c $< -o $@
 
-token.o: token.c
-	gcc -c token.c
+lex.yy.c: scanner.flex parser.tab.h
+	flex scanner.flex
 
-error.o: error.c
-	gcc -c error.c
-
-lex.yy.o: lex.yy.c
-	gcc -c lex.yy.c
-
-lex.yy.c: scanner.l
-	flex scanner.l
+parser.tab.c parser.tab.h: parser.bison
+	yacc -d -bparser -v parser.bison
 
 clean:
-	rm *.o lex.yy.c cminor *.out
+	rm *.o lex.yy.c cminor parser.tab* parser.output

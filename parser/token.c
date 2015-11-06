@@ -17,7 +17,6 @@ const char * token_string(token_t t){
 	case TOKEN_STRING: return "STRING"; break;
 	case TOKEN_TRUE: return "TRUE"; break;
 	case TOKEN_VOID: return "VOID"; break;
-	case TOKEN_WHILE: return "WHILE"; break;
 	case TOKEN_IDENT: return "IDENTIFIER"; break;
 	case TOKEN_STRING_LITERAL: return "STRING_LITERAL"; break;
 	case TOKEN_INTEGER_LITERAL: return "INTEGER_LITERAL"; break;
@@ -39,6 +38,7 @@ const char * token_string(token_t t){
 	case TOKEN_MINUS: return "MINUS"; break;
 	case TOKEN_LOGICAL_AND: return "LOGICAL_AND"; break;
 	case TOKEN_LOGICAL_OR: return "LOGICAL_OR"; break;
+	case TOKEN_LOGICAL_NOT: return "LOGICAL_NOT"; break;
 	case TOKEN_ASSIGNMENT: return "ASSIGNMENT"; break;
 	case TOKEN_LPAREN: return "LPAREN"; break;
 	case TOKEN_RPAREN: return "RPAREN"; break;

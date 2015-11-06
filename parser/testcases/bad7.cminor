@@ -1,0 +1,5 @@
+main: function integer (i: integer, c: char, s:string, b:boolean, as: array [43] string) = {
+
+  print i,c,s,b,as return i;
+
+}

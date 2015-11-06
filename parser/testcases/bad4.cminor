@@ -1,0 +1,3 @@
+f: function void (void) = { // you can't do this
+	return x;
+}
