@@ -1,5 +1,5 @@
-main: function integer (x: integer) = {
-
-return 7 + t + t(47328091) -17/2
-
+//checking param lists
+main:function void("hello", x:integer) =
+{
+	print x;
 }

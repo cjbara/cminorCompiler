@@ -1,6 +1,14 @@
-main: function integer () = {
+//solved if else works
 
-	a: array [5] integer = {4, 5, 6, 7, 8};
-	print a[4];
-
+main: function void() = {
+	x:integer = 5;
+	if( 4 < 5 )
+		if( 10 < 20 )
+			for(x = 0; x < 5; x++)
+				if( 4 < 5 )
+					print "helloo\n";
+				else
+					print "hello\n";
+		else
+			print "goodbye";
 }

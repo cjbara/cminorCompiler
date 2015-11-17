@@ -44,7 +44,6 @@ enum token {
 	TOKEN_RCURLY,
 	TOKEN_COMMA,
 	TOKEN_COLON,
-	TOKEN_ERROR
 };
 typedef enum token token_t;
 

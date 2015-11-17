@@ -72,7 +72,7 @@ void 		{ return TOKEN_VOID; }
 		 /*Comment do nothing*/}
 
 {ID}		{ return TOKEN_IDENT; }
-.		{ return TOKEN_ERROR; }
+.		{ scan_error(); }
 
 %%
 

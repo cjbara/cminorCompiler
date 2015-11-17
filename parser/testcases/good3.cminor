@@ -1,6 +1,11 @@
+// produces correct precedence of operations
 
-main: function integer () = {
-
-	print a[b[c[d[e[f[g[h]]]]]]];
-
+main: function void () = {
+	x:integer = 5;
+	y:integer = 4;
+	if(true || false && true)
+	{
+		x = 6;
+		
+	}
 }

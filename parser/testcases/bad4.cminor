@@ -1,3 +1,7 @@
-f: function void (void) = { // you can't do this
-	return x;
+// for loop without correct # of args
+main:function void()=
+{
+	for(i=0; i++) {
+		print i;
+	}
 }

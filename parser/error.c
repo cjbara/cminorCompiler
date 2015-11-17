@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void error() {
+void scan_error() {
   fprintf(stderr,"scan error: %s is not a valid character\n", yytext);
   exit(1);
 }

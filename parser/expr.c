@@ -64,11 +64,14 @@ void expr_print(struct expr *e){
 		printf("(");
 		expr_print(e->right);
 		printf(")");
-	} else if(e->kind == EXPR_ARRINDEX){
+	} else if(e->kind == EXPR_ARRCALL){
 		expr_print(e->left);
-		printf("[");
 		expr_print(e->right);
+	} else if(e->kind == EXPR_ARRINDEX){
+		printf("[");
+		expr_print(e->left);
 		printf("]");
+		expr_print(e->right);
 	} else if(e->kind == EXPR_BLOCK){
 		printf("{");
 		expr_print(e->right);

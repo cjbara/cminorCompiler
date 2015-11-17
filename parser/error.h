@@ -1,1 +1,1 @@
-void error();
+void scan_error();

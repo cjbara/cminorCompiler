@@ -1,6 +1,6 @@
-main: function integer () = {
-
-for(i=0;j<10;i++) 
-//no for body
-
+// two multiples should generate parse error
+main: function void() =
+{
+	x:integer = 5 ** 5;
+	print x;
 }

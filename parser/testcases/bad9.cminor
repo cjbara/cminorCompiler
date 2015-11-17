@@ -1,38 +1,5 @@
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-f: function char () {
-
-	
-	a = b + c;
-
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
+//checking param lists with trailing ,
+main:function void(hello:string, )=
+{
+	print hello;
 }

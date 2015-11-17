@@ -1,10 +1,8 @@
-/* tests open ifs and for loops */
+// expressions must end with ;
+x:integer = 5;
 
-main: function integer () = {
-
-if(true) x++; if(false) y++;else x--;
-
-for                              (x x;x<y;x++) x--;
-for (i = 0; i<t; i++) print;
-
+main:function void()=
+{
+	x++;
+	x++
 }

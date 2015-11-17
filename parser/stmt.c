@@ -47,7 +47,7 @@ void stmt_print(struct stmt *s, int indent){
 			for(i=0; i<indent; i++) printf("\t");
 			printf("if ("); 
 			expr_print(s->expr);
-			printf(") ");
+			printf(") \n");
 			stmt_print(s->body, indent);
 			if(s->else_body){
 				printf("else ");

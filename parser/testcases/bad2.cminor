@@ -1,3 +1,5 @@
-//cannot have an expr or statement as global
-
-5 + 6 + 7;
+// semicolon isn't a statement
+fxn:function void() =
+{
+	;
+}

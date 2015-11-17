@@ -1,5 +1,2 @@
-//declarations must be of specific type, you cannot use variable syntax
-
-main: integer;
-main: string = {"The"};
-main: array [2] string = {"The", "Fox"};
+// can't use anything but print in this form
+printf "hello world", x, y;

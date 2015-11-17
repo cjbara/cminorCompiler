@@ -1,28 +1,6 @@
-f: function integer () {
-n: function integer () = {
-//test all the decl statements
-x: integer = 4 + 5 - 6 % 8 / 5; //test
-y: boolean;
-x: integer = 65;
-y: char = 'A';
-str: string = "The quick brown fox";
-
-f: integer = 0;
-
-writechar: function void ( c: char, b: boolean ) = {
-
-        if(x<4){ return 4; }
-        variable2: integer = x+5/1555;
-}
-
-writechar(a,b);
-6+7+8+9;
-a: integer = 65;
-b: array [2] boolean;
-x: integer = (10+3)*5;
-
-}
-b: array [2] boolean = {true,false};
-f: integer = 0;:w
-
+//print not seperated by ,'s
+x:intger = 5;
+main:function void()
+{
+	print x x "hello";
 }

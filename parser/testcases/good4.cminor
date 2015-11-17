@@ -1,10 +1,11 @@
-/* tests open ifs and for loops */
+// produces correct precedence of operations
 
-main: function integer () = {
-
-if(true) x++; if(false) y++;else x--;
-
-for 				 (;;) x--;
-for (i = 0; i<t; i++) print;
-
+main: function void() = {
+	x:integer = 5;
+	y:integer = 4;
+	if(!((4*x^5 + 4)-- - 4 >= 1))
+	{
+		x = 6;
+		
+	}
 }

@@ -13,4 +13,4 @@ parser.tab.c parser.tab.h: parser.bison
 	yacc -d -bparser -v parser.bison
 
 clean:
-	rm *.o lex.yy.c cminor parser.tab* parser.output
+	rm *.o lex.yy.c cminor parser.tab.* parser.output testcases/*.out
