@@ -19,4 +19,4 @@ lex.yy.c: scanner.l
 	flex scanner.l
 
 clean:
-	rm *.o lex.yy.c cminor *.out
+	rm *.o lex.yy.c cminor testcases/*.out

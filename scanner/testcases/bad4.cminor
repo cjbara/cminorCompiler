@@ -1,2 +1,2 @@
 // doesn't support floating point
-50006.0050;
+x: integer = 50006.0050;
