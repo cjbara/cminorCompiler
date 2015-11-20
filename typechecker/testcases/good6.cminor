@@ -1,0 +1,14 @@
+f: function integer(x:integer);
+
+main: function integer() = {
+
+	p: boolean = true;
+	b: integer = 5;
+	a: integer = f(b);
+
+}
+
+f: function integer (x: integer) = {
+	return x + 15;
+}
+

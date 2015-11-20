@@ -1,0 +1,5 @@
+/* Multiple parameters with same name should be resolution error */
+f:function integer (y:boolean, x:integer) = {
+	x: integer;
+	return a;
+}

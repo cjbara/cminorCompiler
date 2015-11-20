@@ -1,0 +1,11 @@
+
+a: integer = 0;
+b: boolean = true;
+
+main: function integer (x: integer, y: boolean) = {
+	if(b == true){
+		return a + x;
+	} else {
+		return a - x;
+	}
+}

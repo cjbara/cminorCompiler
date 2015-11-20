@@ -1,0 +1,51 @@
+/* This tests every type of expression and uses them wrong */
+
+add: function integer(x: integer, y:integer) = {
+	return x+y;
+}
+
+
+main: function integer() = {
+
+	x: integer = 2;
+	y: integer = 3;
+	z:boolean = true;
+	a:boolean = false;
+	
+	
+	//= aplies to all types but functions
+	x = 3;
+	a = false;
+	add = true;
+
+	//these operators only apply to integers
+	x = x>z;
+	x<z;
+	x>=z;
+	x<=z;
+
+	//== and != apply to all types but arrays and functions
+	a==y;
+	z!=y;
+	x == z;
+	y != z;
+	
+	z = x+y;
+	a = a-y;
+	x = z*y;
+	x = z/y;
+	x = z%y;
+	x = z^y;
+	a++;
+	z--;
+	x = !(x==a || x>=y && x<=y && a);
+
+	add(x, a);
+
+	q: array [4] boolean = {true, x, true, false};
+	p: array [4] boolean;
+	q = p;
+	a = q[y];
+
+	print x, y, z, p, q[3];
+}

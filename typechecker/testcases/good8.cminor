@@ -1,0 +1,13 @@
+/* tests to make sure parameters passed to a function match the param list in the function */
+
+f: function integer(x: integer, y:boolean, z:char) = {
+	return x;
+}
+
+main:function integer() ={
+
+	a:integer = 3;
+	b: boolean = false;
+	c: char = 'Q';
+	return f(a,b,c);
+}

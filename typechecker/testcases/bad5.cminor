@@ -1,0 +1,21 @@
+/* This tests global declarations */
+
+b: string = "Cool beans";
+c: string = b;
+a: array [3] string = {"What", "is", "love?"};
+x: array [2] boolean = {false, true, false};
+
+y: boolean = x[1];
+
+f: function boolean () = {
+	x[1] = false;
+	x[0] = true && x[1];
+	
+	y: boolean = x[1];
+
+	variable: array [3] boolean = {false, true, "string"};
+	var2: boolean = false;
+	variable[2] = var2;
+
+	return x[1];
+}

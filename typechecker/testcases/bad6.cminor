@@ -1,0 +1,16 @@
+f: function integer (x: integer) = {
+	return true;
+}
+
+main: function integer() = {
+
+	f2: function boolean (x: integer) = {
+		return x;
+	}	
+
+	p: boolean = true;
+	b: integer = 5;
+	a: integer = f(p);
+
+	p = f2(b);
+}

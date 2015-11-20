@@ -1,0 +1,24 @@
+// two multiples should generate parse error
+main: function integer (x:integer) =
+{
+	a: array [2] array [2] array [2] integer;
+
+	a[1][1][1] = 12;
+
+	b: array [2] array[2] integer;
+
+	c: array [2] integer;
+
+	a[1] = b;
+	a[1][0] = c;
+	
+	if(x == 1) {
+		x:integer = 5 * 5;
+		return x;
+	} else {
+		b:integer;
+		b++;
+	}
+	print 3, 4, 'c', "String", true;
+	return 0;
+}

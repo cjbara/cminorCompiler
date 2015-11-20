@@ -1,0 +1,16 @@
+
+f: function integer(x:integer);
+
+f: function boolean(x:integer);
+
+f: function integer(x:char);
+
+f: function integer(x:integer) = {
+	return 4;
+}
+
+f: function integer(x:integer) = {
+	return 5;
+}
+
+

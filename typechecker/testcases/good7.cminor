@@ -1,0 +1,18 @@
+/*tests loops and control flow */
+
+main: function integer () = {
+
+	x: integer = 5;
+	a: array [5] integer = { 0,0,0,0,0 };
+
+	for(x; x<5; x++){
+		if(a[x] == 0 )
+			a[x] = x;
+		else
+			a[x] = 1;
+		print a[x];
+	}
+
+	return a[x];
+
+}

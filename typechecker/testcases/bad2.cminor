@@ -1,0 +1,13 @@
+// two multiples should generate parse error
+main: function void(x:integer) =
+{
+	if(x == 1) {
+		x:integer = 5 * 5;
+		return x;
+	} else {
+		b:integer;
+		b++;
+	}
+	b++;
+	
+}
