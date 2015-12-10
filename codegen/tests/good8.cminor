@@ -1,0 +1,16 @@
+	f2:function integer(p:integer, q:integer) = {
+		s:integer = 5;
+		return p+s-q;
+	}
+
+f: function integer(x:integer, y:integer, z:integer) = {
+	a:integer = 5;
+	b:integer = 4;
+	c:integer =-15;
+	d:integer= 200;
+	return x+y+z+a+b +d + f2(c, b);
+}
+
+main: function integer() ={
+	print f(1,2,3);
+}

@@ -1,0 +1,6 @@
+/* This tests the most basic function in assembly */
+
+main: function integer () = {
+	print "Should return 5\n";
+	return 5;
+}

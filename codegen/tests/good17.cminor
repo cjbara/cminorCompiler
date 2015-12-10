@@ -1,0 +1,10 @@
+main: function integer() = {
+
+	i:integer = 3;
+	j:integer = 3;
+	k:integer = 3;
+	h:integer = 3;
+	
+	print i+j+k+h, " ", i-j-k-h, " ", i*j*k*h, " " , i/j/k/h, "\n";
+
+}

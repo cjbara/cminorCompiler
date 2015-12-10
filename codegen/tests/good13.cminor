@@ -1,0 +1,12 @@
+main: function integer() ={
+
+	x:integer = 100;
+	xv:integer = 5;
+	d:integer = 100;
+	p:integer = 100;
+
+	for(;x<300;){
+		x = x + xv*d/p;
+		print "x = ", x, '\n';
+	}
+}

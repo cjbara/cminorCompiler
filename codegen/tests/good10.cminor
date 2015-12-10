@@ -1,0 +1,20 @@
+/* Tests string compare, char compare, bool compare */
+
+main:function integer() = {
+
+	s:string = "hello";
+	if(s == "hello") {
+		print "hello\n";
+	} else {
+		print "\n";
+	}
+
+	x:boolean = true;
+	if(x == true) print true, "\n";
+	else print "\n";
+	
+	c:char = 't';
+	if(c == 't') print "t\n";
+	else print "\n";
+
+}

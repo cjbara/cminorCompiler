@@ -1,0 +1,15 @@
+/* Tests strings, if statements, and the power function */
+
+main: function integer() = {
+	x:integer = -2;
+	y:integer = 3;
+	print y+x, "\n";
+	if(x<y){
+		print "Hi", x, y, " \n";
+		print '\n';
+	} else {
+		print "No, my name is John\n";
+	}
+	print 2^y, " ", 5,"\n";
+	print 2^0, "\n";
+}

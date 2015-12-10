@@ -1,0 +1,9 @@
+main:function integer() = {
+	y:integer = 15;
+	x:integer = 5;
+	if(x>4){
+		x:integer;
+		x = 3;
+		print "y should be 15, and y=", y, "\n";
+	}
+}

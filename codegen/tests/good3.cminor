@@ -1,0 +1,14 @@
+/*tests out global declarations and global variables */
+b: boolean = true;
+x: integer = 14;
+s: string = "Hello\n";
+c: char = 't';
+
+main: function integer () = {
+	s2: string = "how's life?\n";
+	if(b){
+		print true;
+	} else {
+		print false;
+	}
+}

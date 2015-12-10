@@ -1,0 +1,19 @@
+main:function integer() ={
+
+	x:integer = 20;
+	vx:integer = 1;
+	xsize:integer = 200;
+	i: integer = 0;
+	for(;i<200;i++){
+		if(x<0 && vx <0){
+			vx = -1*vx;
+		}
+		if(x>(xsize) && vx>0) {
+            vx = -1*vx;
+        }
+		x = x + vx;
+		print "x: ", x, " vx: ", vx, "\n";
+	}
+
+
+}

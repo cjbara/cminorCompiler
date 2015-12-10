@@ -1,0 +1,13 @@
+b: boolean = true;
+x: integer = 20;
+
+f:function integer (x:integer);
+
+f:function integer (y:integer) = {
+	return x;
+}
+
+main: function integer () = {
+	if(!b) return (4+5);
+	else return f(2);
+}

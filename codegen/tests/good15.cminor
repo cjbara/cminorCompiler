@@ -1,0 +1,8 @@
+s1:string = "hello";
+
+main:function integer()={
+
+	s2:string = "hello";
+	if(s1 == s2) print s1 == s2, " hello \n";
+
+}

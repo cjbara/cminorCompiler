@@ -1,0 +1,20 @@
+/*Tests good printing, parameters, and posfix incrementers */
+
+f:function integer(a:integer, b:integer, c:integer, d:integer);
+
+main:function integer()={
+	print f(2,3,4,5), " ", true, " hello\n";
+}
+f:function integer(a:integer, b:integer, c:integer, d:integer)={
+	x: integer;
+	y:integer;
+	
+	//imcrement a and decrement b
+	print "a: ", a++, " b: ", b--;
+	print "\na++: ", a, " b--: ", b, "\n";
+
+	c = d++;
+	return c+d;
+
+}
+

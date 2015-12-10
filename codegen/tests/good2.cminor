@@ -1,0 +1,9 @@
+/* Tests control flow */
+
+main: function integer() = {
+	print "Should return 25\n";
+	if(!(5>10))
+		return 5*5;
+	else
+		return 9%4;
+}

@@ -1,0 +1,24 @@
+/* Testing double for loops and nested ifs */
+
+main: function integer() ={
+
+	i:integer;
+	j:integer;
+	for(i=0; i<10; i++){
+		for(j=0; j<15; j++){
+			print '(',i, ',', j, ")\n";
+		}
+	}
+
+	x:boolean =true;
+	y:boolean=false;
+
+	//multiple ifs with a complicated boolean
+	if((x&&y||true||false||true||false&&true) == ((i<j) &&true &&true&&true&&true&&true)){
+		if(x){
+			print true, "\n";
+		}
+	}
+
+
+}

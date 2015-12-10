@@ -1,0 +1,14 @@
+main: function integer() = {
+
+	i:integer;
+	j:integer;
+	y:integer;
+	for(i=0; i<25; i++){
+		y = i*2;
+		for(j=0; j<y; j++)
+			print "#";
+		print "\n";
+	}
+		
+
+}
