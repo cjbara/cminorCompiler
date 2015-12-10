@@ -783,7 +783,11 @@ void expr_codegen(struct expr *e, FILE *file) {
 			fprintf(file, "\n\t#Identifier %d %s\n", e->symbol->which, e->symbol->name);
 			
 			e->reg = register_alloc();
-			fprintf(file, "\tMOV %s, %s\n", symbol_code(e->symbol), register_name(e->reg));
+			if(e->symbol->type->kind == TYPE_STRING && e->symbol->kind == SCOPE_GLOBAL){
+				fprintf(file, "\tLEA %s, %s\n", symbol_code(e->symbol), register_name(e->reg));
+			} else {
+				fprintf(file, "\tMOV %s, %s\n", symbol_code(e->symbol), register_name(e->reg));
+			}
 			break;
 		case EXPR_INTEGER_LITERAL:
 			//comment label

@@ -7,7 +7,8 @@ c: char = 't';
 main: function integer () = {
 	s2: string = "how's life?\n";
 	if(b){
-		print true;
+		print s2;
+		print s;
 	} else {
 		print false;
 	}
